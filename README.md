@@ -112,6 +112,6 @@ References
 Author
 ------
 
-Gennady Khvorykh, a bioinformatician, [inZilico.com](htt://inzilico.com)
+Gennady Khvorykh, a bioinformatician, [inZilico.com](http://inzilico.com)
 
 Interested in contributing to the project? Suggestions, questions, and comments are open! Feel free [to drop me the message](http://www.inzilico.com/contacts/).
