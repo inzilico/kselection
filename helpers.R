@@ -272,8 +272,8 @@ EstimateErrors <- function(origin, masks, imputed, K){
   # Initilize output
   out <- list()
   
-  # Loop trough the masks
-  for(i in seq_along(masks)){
+  # Loop through a vector with names of imputed files
+  for(i in seq_along(imputed)){
     
     # Load imputed data for current mask
     g1 <- ReadFastPHASE(imputed[i])
