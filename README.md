@@ -30,13 +30,15 @@ The usage of make\_test\_files.R
 
 2. Let `make_test_files.R` to be executable. Run in command line:
 
-    chmod +x make_test_files.R
-
+```
+chmod +x make_test_files.R
+```
 3. Check that you have the following R packages installed:
 
-    library("optparse")
-    library("plyr")
-
+```
+library("optparse")
+library("plyr")
+```
 4. Run `make_test_files.R` to generate `n` test files of fastPHASE format (\*.inp), each having `p` proportion of genotypes randomly masked.
 
 Let `chr1.inp` to contain the genotypes of a population from the chromosome one.
@@ -85,9 +87,9 @@ Be aware that imputation is time consuming stage. Upon accomplishing, we can est
 The usage of EstimateErrors()
 -----------------------------
 
-There is a lot of metrics to estimate the imputation quality of genotypes (Chan et al, 2016). So far I applied the proportion of correctly imputed genotypes. To compute it, use `EstimateErrors()` function. It returns a data frame with three columns: "alleles", "genotypes", and "K". The first two contains the errors, the third one - K (number of clusters).
+There are several metrics to estimate the imputation quality of genotypes (Chan et al, 2016). So far I applied the proportion of correctly imputed genotypes. To compute it, use `EstimateErrors()` function. It returns a data frame with three columns: "alleles", "genotypes", and "K". The first two contains the errors, the third one - K (number of clusters).
 
-The error is counted as 1 - accuracy, where accuracy is a proportion of correctly imputed genotypes (alleles). The function returns values for one set of test files.
+The error is counted as 1 - accuracy, where accuracy is a proportion of correctly imputed genotypes or alleles. By correctly imputed genotype we mean that both alleles coincided with the original ones. The function returns the values for one set of test files.
 
     # Source functions
     source("helpers.R")
