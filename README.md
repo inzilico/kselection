@@ -6,11 +6,13 @@ Description
 
 The repo contains the following files:
 
--   `make_test_files.R`: R script to generate fastPHASE input files with artificially missing genotypes
+-   `make_test_files.R` generates fastPHASE input files with artificially missing genotypes
 
--   `helpers.R`: functions for `make_test.files.R`
+-   `helpers.R` has functions for `make_test.files.R`
 
-Workflow to select the best K?
+-  `README.md` is this file 
+
+Workflow to select the best K
 ------------------------------
 
 1.  Prepare a file in the format of fastPHASE input file (\*.inp).
@@ -21,21 +23,21 @@ Workflow to select the best K?
 
 4.  Estimate the imputation quality with `EstimateErrors()` R function and chose K that minimizes the imputation error.
 
-The usage of make\_test\_files.R?
+The usage of make\_test\_files.R
 ---------------------------------
 
-A. Download `make_test_files.R` and `halpers.R` files.
+1. Download `make_test_files.R` and `halpers.R` files.
 
-B. Let `make_test_files.R` to be executable. Run in command line:
+2. Let `make_test_files.R` to be executable. Run in command line:
 
     chmod +x make_test_files.R
 
-C. Check that you have the following R packages installed:
+3. Check that you have the following R packages installed:
 
     library("optparse")
     library("plyr")
 
-D. Run `make_test_files.R` to generate `n` test files of fastPHASE format (\*.inp), each having `p` proportion of genotypes randomly masked.
+4. Run `make_test_files.R` to generate `n` test files of fastPHASE format (\*.inp), each having `p` proportion of genotypes randomly masked.
 
 Let `chr1.inp` to contain the genotypes of a population from the chromosome one.
 
