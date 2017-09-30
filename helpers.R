@@ -16,11 +16,9 @@ ReadFastPHASE <- function(input, ...){
   # Load data set
   l <- readLines(input, ...)
   
-  # Remove lines with numbers
-  l <- l[grep("\\d+", l, invert = T)]
-  
-  # Remove lines having `#`  
-  l <- l[grep("#", l, invert = T)]
+  # Take number of characters of the last element and
+  # leave only elements having this number of characters
+  l <- l[nchar(l) == nchar(l[length(l)])]
   
   # Print info about dataset
   message(sprintf("%s sequences and %s markers are loaded from %s.", 
