@@ -10,12 +10,12 @@ The repo contains the following files:
 
 -   `helpers.R` has functions for `make_test.files.R`
 
--  `README.md` is this file 
+-  `README.md` is what you are reading 
 
 Workflow to select the best K
 ------------------------------
 
-1.  Prepare a file in the format of fastPHASE input file (\*.inp).
+1.  Prepare a file in the format of fastPHASE input file (\*.inp). It can be done with Plink tool. Alleles can be coded by any character including numbers, but missing ones are coded as `?`.
 
 2.  Generate test files with `make_test_files.R`
 
@@ -111,7 +111,9 @@ References
 
 3.  fastPHASE 1.4 manual. [download](http://scheet.org/code/fastphase_doc_1.4.pdf)
 
-4.  Chan AW, Hamblin MT, Jannink J-L. Evaluating Imputation Algorithms for Low-Depth Genotyping-By-Sequencing (GBS) Data. Feltus FA, ed. PLoS ONE. 2016;11(8):e0160733. [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/27537694)
+4.  Plink tool. [link](http://zzz.bwh.harvard.edu/plink/)
+
+5.  Chan AW, Hamblin MT, Jannink J-L. Evaluating Imputation Algorithms for Low-Depth Genotyping-By-Sequencing (GBS) Data. Feltus FA, ed. PLoS ONE. 2016;11(8):e0160733. [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/27537694)
 
 Author
 ------
