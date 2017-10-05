@@ -140,8 +140,17 @@ GenerateMask <- function(m, masked, size){
   #   A new mask as a binary matrix
   
   for (j in seq_len(ncol(m))) {
+    
     ind <- which(masked[, j] == 0)
-    add <- sample(ind, size[j])
+    
+    # If no genotypes left for masking skip this position
+    if(length(ind) == 0 || size[j] == 0) next 
+      
+    # Sample 
+    if(length(ind) >= size[j]) { 
+      add <- sample(ind, size[j]) 
+      } else { add <- ind }
+    
     m[add, j] <- 1
   }
   m
