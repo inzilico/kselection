@@ -115,6 +115,11 @@ References
 
 5.  Chan AW, Hamblin MT, Jannink J-L. Evaluating Imputation Algorithms for Low-Depth Genotyping-By-Sequencing (GBS) Data. Feltus FA, ed. PLoS ONE. 2016;11(8):e0160733. [PubMed](https://www.ncbi.nlm.nih.gov/pubmed/27537694)
 
+Citing
+------
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1173276.svg)](https://doi.org/10.5281/zenodo.1173276)
+
 Author
 ------
 
