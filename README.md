@@ -118,7 +118,7 @@ References
 Citing
 ------
 
-Gennady Khvorykh. inzilico/kselection v1.0. (2018). doi:10.5281/zenodo.1173276
+Gennady Khvorykh. inzilico/kselection v1.0. (2018). GitHub repository, https://github.com/inzilico/kselection. doi:10.5281/zenodo.1173276
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1173276.svg)](https://doi.org/10.5281/zenodo.1173276)
 
