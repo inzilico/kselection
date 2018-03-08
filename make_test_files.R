@@ -54,7 +54,7 @@ main <- function(){
   # Generate n masks 
   masks <- GenerateMaskSet(g, n = options$ntest, p = options$proportion)
   
-  # Save `masks` as `masks.RDS` at thes same directory as `output`
+  # Save `masks` as `masks.RDS` at the same directory as `output`
   dir <- dirname(output)
   if(!dir.exists(dir)) dir.create(dir)
   fn <- paste0(dir, "/masks.RDS")

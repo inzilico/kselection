@@ -1,5 +1,5 @@
 # Functions used in make_test_files.R  
-# Author: Gennady Khvorykh, http://inZilico.com
+# Author: Gennady Khvorykh, http://inzilico.com
 
 library(plyr, quietly = T)
 
@@ -23,15 +23,15 @@ ReadFastPHASE <- function(input, ...){
   # Print info about dataset
   message(sprintf("%s sequences and %s markers are loaded from %s.", 
                   length(l), nchar(l[1]), input))
-  l
+  return(l)
 }
 
 MaskSequence <- function(sequence, positions, symbol = "?"){
-  # Substitutes base in a sequence for `mask` symbol
+  # Replace bases in a sequence by `mask` symbol
   # Input: 
   #   sequence: character string
   #   positions: vector with positions of characters to be replaced by symbol
-  #   symbol: character representing missing value
+  #   symbol: character representing a missing value
   # Returns:
   #   Sequence where some bases are replaced by symbol 
   
@@ -41,7 +41,7 @@ MaskSequence <- function(sequence, positions, symbol = "?"){
 }
 
 ApplyMasks <- function(g, masks, pref) {
-  # Applies set of masks to sequencies. Saves the result as fastPHASE input. 
+  # Applies set of masks to sequencies. Saves the result as fastPHASE input file. 
   # Args:
   #   g: character vector with sequences
   #   masks: list of masks as binary matrices 

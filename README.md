@@ -1,6 +1,8 @@
 How to Select K in fastPHASE
 ================
 
+Since March, 2018 the scripts from this workflow are available as [imputeqc](https://github.com/inzilico/imputeqc) R package. You can continue to read this page and apply the solution proposed. Better option is to turn to [imputeqc](https://github.com/inzilico/imputeqc), since it is updated and more convinient.     
+
 Description
 -----------
 
